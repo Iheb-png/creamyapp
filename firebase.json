@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "public": "frontend/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "runtime": "python312",
+    "source": "functions"
+  },
+  "emulator": {
+    "auth": {
+      "host": "localhost",
+      "port": 9099
+    },
+    "functions": {
+      "host": "localhost",
+      "port": 5001
+    },
+    "firestore": {
+      "host": "localhost",
+      "port": 8080
+    },
+    "hosting": {
+      "host": "localhost",
+      "port": 5000
+    },
+    "storage": {
+      "host": "localhost",
+      "port": 9199
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Install dependencies
+Flask
+flask-cors
+pytesseract
+Pillow
+spacy
